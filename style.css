@@ -1,0 +1,44 @@
+body {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5%;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  background-color: lightgrey;
+}
+li {
+  float: left;
+  padding: 3px;
+  border-style: solid;
+  background-color: greenyellow;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.c-item {
+  margin: auto;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+#contact-form {
+  border-radius: 50px;
+  background-color: yellow;
+  padding: 50px;
+}
+
+#contact {
+  border-top-style: solid;
+}
