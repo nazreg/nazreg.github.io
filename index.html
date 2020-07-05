@@ -3,104 +3,331 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcelo Site</title>
+    <title>Marcelo Nazario</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Stylesheet  -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <section class="c-item">
-      <h2>Marcelo Nazario</h2>
-      <h4>Web Development Student</h4>
-    </section>
-
-    <ul>
-      <li><a href="#about">Contact</a></li>
-      <li>Events</li>
-      <li>Photos</li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          More</a
+        >
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#Knowledge">Knowledge</a>
+          <a class="dropdown-item" href="#certs">Certifications</a>
+          <a class="dropdown-item" href="#contact">Contact</a>
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item"
+            href="https://www.linkedin.com/in/marcelo-nazario"
+            >Linkedin profile</a
+          >
+        </div>
+      </li>
     </ul>
 
     <br />
 
-    <section class="c-item" id="about">
-      <h3 class="c-item">Hi, I am Marcelo</h3>
-      <h4 class="c-item">I ♥ learning HTML</h4>
-
+    <div class="card aligncenter" style="width: 18rem;">
       <img
-        class="round"
         src="https://media-exp1.licdn.com/dms/image/C4E03AQHAds8FmXQd2g/profile-displayphoto-shrink_200_200/0?e=1599091200&v=beta&t=175jM0Wz8ZzQWV4z92TOFCETWWQI4JQi_7WLZPk6164"
-        alt="my photo"
+        class="card-img-top round"
+        alt="profile photo"
       />
-      <br />
-      <img
-        src="https://www.learninglight.com/wp-content/uploads/2017/06/connect-on-LinkedIn-button.png"
-        alt="linked img"
-      />
-    </section>
+    </div>
 
-    <section id="contact">
-      <h1>Contact me</h1>
+    <!-- NEW HTML -->
+    <!-- HEADER SECTION  -->
+    <div id="header">
+      <div class="container">
+        <div class="row centered">
+          <h1>Marcelo Nazario</h1>
+          <h2>Web Development Student</h2>
+        </div>
+        <!--/row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!--/header-->
 
-      <h3>Contact me using the following form</h3>
-      <form id="contact-form">
-        <label for="firstname">First Name:</label><br />
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          value="firstname"
-        /><br />
-        <label for="lastname">Last Name:</label><br />
-        <input type="text" id="lastname" name="lastname" value="lastname" />
-        <br />
-        <br />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Type your message!"
-        ></textarea>
-        <br />
-        <br />
-        <button>Send</button>
-      </form>
-    </section>
+    <!--   WHITE SECTION  -->
+    <div id="w">
+      <div class="container">
+        <div class="row centered">
+          <h4>
+            Hi, I am Marcelo I ♥ learning HTML, CSS, etc.
+          </h4>
+          <!--col-md-8 -->
+        </div>
+        <!--/row -->
+      </div>
+      <!--/container -->
+    </div>
+    <!--/w -->
 
-    <section id="photos">
-      <a
-        target="_blank"
-        href="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533__340.jpg"
-      >
-        <img
-          src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533__340.jpg"
-          alt="html"
-          width="400"
-          height="200"
-        />
-      </a>
-      <a
-        target="_blank"
-        href="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569_960_720.jpg"
-      >
-        <img
-          src="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569_960_720.jpg"
-          alt="404"
-          width="400"
-          height="200"
-        />
-      </a>
-      <a
-        target="_blank"
-        href="https://www.esri.com/about/newsroom/wp-content/uploads/2019/01/auwin19_react_banner.jpg"
-      >
-        <img
-          src="https://www.esri.com/about/newsroom/wp-content/uploads/2019/01/auwin19_react_banner.jpg"
-          alt="REACT"
-          width="400"
-          height="200"
-        />
-      </a>
-    </section>
+    <!-- Knowledge -->
+    <div id="Knowledge" class="alert alert-success centered" role="alert">
+      KNOWLEDGE
+    </div>
+
+    <!--   GREEN SECTION  -->
+    <div id="g">
+      <div class="container">
+        <div class="row margintop">
+          <div class="col-md-6 centered">
+            <img
+              src="../img/html.png"
+              class="img-responsive aligncenter"
+              width="290px"
+              alt=""
+              data-effect="slide-left"
+            />
+          </div>
+          <!--/col-md-6 -->
+
+          <div class="col-md-4">
+            <h3 data-effect="slide-right">HTML</h3>
+            <p>
+              Hypertext Markup Language is the standard markup language for
+              documents designed to be displayed in a web browser. It can be
+              assisted by technologies such as Cascading Style Sheets and
+              scripting languages such as JavaScript and VBScript.
+            </p>
+          </div>
+          <!--/col-md-4 -->
+        </div>
+        <!--/row -->
+      </div>
+      <!--/container -->
+    </div>
+    <!--/G -->
+
+    <!--   RED SECTION  -->
+    <div id="r">
+      <div class="container">
+        <div class="row margintop">
+          <div class="col-md-4 col-md-offset-2">
+            <h3 data-effect="slide-left">CSS</h3>
+            <p>
+              Cascading Style Sheets is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language like HTML. CSS is a cornerstone technology of the World
+              Wide Web, alongside HTML and JavaScript.
+            </p>
+          </div>
+          <!--/col-md-4 -->
+          <div class="col-md-6 centered">
+            <img
+              src="../img/css.png"
+              class="img-responsive aligncenter"
+              width="290px"
+              alt=""
+              data-effect="slide-right"
+            />
+          </div>
+          <!--/col-md-6 -->
+        </div>
+        <!--/row -->
+      </div>
+      <!--/container -->
+    </div>
+    <!--/R -->
+
+    <!--   BLUE SECTION  -->
+    <div id="b">
+      <div class="container">
+        <div class="row margintop">
+          <div class="col-md-6 centered">
+            <img
+              src="../img/java.jpg"
+              class="img-responsive aligncenter"
+              width="290px"
+              alt=""
+              data-effect="slide-left"
+            />
+          </div>
+          <!--/col-md-6 -->
+
+          <div class="col-md-4">
+            <h3 data-effect="slide-right">Java</h3>
+            <p>
+              Java is a general-purpose programming language that is
+              class-based, object-oriented, and designed to have as few
+              implementation dependencies as possible.
+            </p>
+          </div>
+          <!--/col-md-4 -->
+        </div>
+        <!--/row -->
+      </div>
+      <!--/container -->
+    </div>
+    <!--/B -->
+
+    <!-- Certifications -->
+    <div id="certs" class="alert alert-success centered" role="alert">
+      CERTIFICATIONS
+    </div>
+
+    <div class="flex-container">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/secplus.png" class="card-img-top" alt="CompTIA" />
+        <div class="card-body">
+          <h5 class="card-title">CompTIA Security+</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <p class="list-group-item">Issuing Organization: CompTIA</p>
+          <p class="list-group-item">Issued Apr 2017</p>
+          <p class="list-group-item">Credential ID: WWRN77WPDD1117SK</p>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/aws.png" class="card-img-top" alt="AWS" />
+        <div class="card-body">
+          <h5 class="card-title">AWS Certified Cloud Practitioner</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <p class="list-group-item">
+            Issuing Organization: Amazon Web Services (AWS)
+          </p>
+          <p class="list-group-item">Issued Mar 2020</p>
+          <p class="list-group-item">Credential ID: QKGV4V22E21E18WW</p>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/ccna.jpg" class="card-img-top" alt="Cisco" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Cisco Certified Network Associate Routing and Switching (CCNA)
+          </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <p class="list-group-item">Issuing Organization: Cisco</p>
+          <p class="list-group-item">Issued Dec 2018</p>
+          <p class="list-group-item">Credential ID: 434574170074GLCM</p>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/ccent.png" class="card-img-top" alt="Cisco" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Cisco Certified Entry Networking Technician (CCENT)
+          </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <p class="list-group-item">Issuing Organization: Cisco</p>
+          <p class="list-group-item">Issued Nov 2018</p>
+          <p class="list-group-item">Credential ID: 434104169829JRYI</p>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/CEH.png" class="card-img-top" alt="EC-Council" />
+        <div class="card-body">
+          <h5 class="card-title">Certified Ethical Hacker (CEH)</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <p class="list-group-item">Issuing Organization: EC-Council</p>
+          <p class="list-group-item">Issued Mar 2018</p>
+          <p class="list-group-item">Credential ID: ECC88561118530</p>
+        </ul>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div id="contact">
+      <div class="container">
+        <div>
+          <div>
+            <h2 class="centered">Contact Form</h2>
+            <form>
+              <div class="form-group">
+                <input
+                  type="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                />
+                <div class="validate"></div>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <div class="form-send">
+                <button type="submit" class="">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / contact -->
+
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <p><strong>Marcelo Nazario</strong>. Thank you for visiting!</p>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
-
-  <footer></footer>
 </html>
