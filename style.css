@@ -1,44 +1,225 @@
-body {
-  max-width: 400px;
-  margin: auto;
-  margin-top: 30px;
-  border-radius: 5%;
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  background-color: lightgrey;
-}
 li {
-  float: left;
   padding: 3px;
   border-style: solid;
   background-color: greenyellow;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.c-item {
-  margin: auto;
-  width: 50%;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 .round {
   border-radius: 50%;
 }
 
-#contact-form {
+/* NEW CSS*/
+
+body {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+p {
+  padding: 0;
+  margin-bottom: 12px;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #666;
+  margin-top: 10px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both;
+}
+
+.centered {
+  text-align: center;
+}
+
+.margintop {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+/* HEADER SECTION  */
+
+#header {
+  background: url(../img/header.png) no-repeat center top;
+  padding-top: 200px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+  background-size: 100%;
+}
+
+#header h1 {
+  color: white;
+  font-size: 90px;
+}
+
+#header h2 {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #header {
+    padding-top: 120px;
+    min-height: 250px;
+  }
+
+  #header h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  #header {
+    padding-top: 80px;
+    min-height: 250px;
+  }
+
+  #header h1 {
+    font-size: 30px;
+  }
+}
+
+/* White Section */
+
+#w {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #2d5e31;
+}
+
+/* Green Section */
+
+#g {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: #64c274;
+  min-height: 300px;
+  color: white;
+}
+
+#g h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+#g p {
+  color: white;
+  font-size: 16px;
+}
+
+/* Red Section */
+
+#r {
+  background: #f55f28;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  min-height: 300px;
+  color: white;
+}
+
+#r h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+#r p {
+  color: white;
+  font-size: 16px;
+}
+
+/* Blue Section */
+
+#b {
+  background: #414ce6;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  min-height: 300px;
+  color: white;
+}
+
+#b h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+#b p {
+  color: white;
+  font-size: 16px;
+}
+
+#f {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: #010101;
+}
+
+#f h3 {
+  color: white;
+}
+
+/* certs */
+
+.alert {
+  margin-bottom: 0rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Contact */
+
+#contact {
+  padding: 40px 0;
   border-radius: 50px;
   background-color: yellow;
   padding: 50px;
 }
 
-#contact {
+#contact h2 {
+  margin-bottom: 20px;
   border-top-style: solid;
+}
+
+/* footer */
+
+#footer {
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer p {
+  margin-bottom: 5px;
+  color: #fff;
 }
